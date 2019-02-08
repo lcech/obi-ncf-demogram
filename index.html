@@ -29,7 +29,19 @@
   </head>
   <body>
     <h1>ČSOB OBI NCF ACC</h1>
-    <p>Open Google Chrome Developer Console and run <code>_satellite.setDebug(true);</code> and refresh the page to see debug messages</p>
+    <p>Open Google Chrome Developer Console and run <code>_satellite.setDebug(true);</code> and refresh the page to see debug messages.</p>
+    <p>See this page's source code for the integration manual.</p>
+    <p>Example of calling a <code>measure</code> function</p>
+    <p>
+      <blockquote>
+<pre>
+<code>measure({</code>
+<code>&nbsp;&nbsp;action: "testButtonClicked",</code>
+<code>&nbsp;&nbsp;elementName: "Test link"</code>
+<code>});</code>
+</pre>
+      </blockquote>
+    </p>
     <p><a href="#" id="test">Test link</a></p>
     <script type="text/javascript">
       // Track initial pageload with just the application-level data (no parameter needed)
