@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ČSOB OBI NCF ACC</title>
+    <!-- Tracking Integration Snippet -->
+    <script type="text/javascript">
+      var digitalData = digitalData || {};
+      
+      // Example of passing application-level data
+      digitalData.application = "OBI-NCF";
+      digitalData.product = "Loan";
+      
+      // Initialization
+      !function(a, k, t, i, v, u, j, e, m) {
+        // Async queue initialization
+        a[i] = a[i] || function() {
+          (a[i].q = a[i].q || []).push(arguments)
+        },
+        e = k.createElement(t),
+        m = k.getElementsByTagName(t)[0],
+        e.async = 1,
+        // Library initialization (cloud hosting for INT environment)
+        e.src = "https://assets.adobedtm.com/launch-EN85cad671bb0342ab9917ca96dd03cac0-staging.min.js",
+        m.parentNode.insertBefore(e, m);
+      } (window, document, "script", "measure");
+    </script>
+    <!-- // Tracking Integration Snippet -->
+  </head>
+  <body>
+    <h1>ČSOB OBI NCF ACC</h1>
+    <p>Open Google Chrome Developer Console and run <code>_satellite.setDebug(true);</code> and refresh the page to see debug messages</p>
+    <p><a href="#" id="test">Test link</a></p>
+    <script type="text/javascript">
+      // Track initial pageload with just the application-level data (no parameter needed)
+      // Make sure that it won't fail when Integration Snippet fails to load
+      try {
+        measure();
+      } catch (err) {}
+      
+      // Track example event
+      var testLink = document.getElementById("test");
+      if (testLink) {
+        testLink.onclick = function() {
+          try {
+            measure({
+              action: "testButtonClicked",
+              elementName: "Test link"
+            });
+          } catch (err) {}
+          return false;
+        };
+      }
+    </script>
+  </body>
+</html>
